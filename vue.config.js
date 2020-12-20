@@ -4,7 +4,6 @@ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const webpack = require("webpack");
 const path = require('path');
 module.exports = {
-  publicPath: './',
   // 预渲染关键配置
   configureWebpack: () => {
     if (process.env.NODE_ENV !== 'production') return;
