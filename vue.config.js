@@ -3,7 +3,6 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const webpack = require("webpack");
 const path = require('path');
-
 module.exports = {
   publicPath: './',
   // 预渲染关键配置
