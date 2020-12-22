@@ -12,6 +12,7 @@ export default {
 }
 </script>
 
-<style>
-  /*@import "./src/assets/less/index.less";*/
+<style lang="less">
+  @import "~@/assets/less/index.less";
+  @import "~@/assets/less/common.less";
 </style>

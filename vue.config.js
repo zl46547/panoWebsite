@@ -4,6 +4,7 @@ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const webpack = require("webpack");
 const path = require('path');
 module.exports = {
+  publicPath: '/',
   // 预渲染关键配置
   configureWebpack: () => {
     if (process.env.NODE_ENV !== 'production') return;
@@ -26,7 +27,7 @@ module.exports = {
           staticDir: path.join(__dirname, 'dist'),
 
           // 对应自己的路由文件，如果有参数需要写具体参数，比如/a/:id需要写/a/123456
-          routes: ['/home','/about'],
+          routes: ['/home/zh','/home/en','/about'],
 
           renderer: new Renderer({
             inject: {
